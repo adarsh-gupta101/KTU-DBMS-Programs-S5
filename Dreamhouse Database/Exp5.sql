@@ -13,3 +13,12 @@ Delete from Viewing where propertyNo ="PG4";
 
 Delete from Viewing ;
 
+
+
+
+part 2
+
+select staffNo, fName, lName from Staff;
+
+select * from PropertyForRent where propertyNo=(select propertyNo from Viewing;
+)
