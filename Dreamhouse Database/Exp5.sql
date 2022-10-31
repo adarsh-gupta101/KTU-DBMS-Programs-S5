@@ -38,4 +38,5 @@ select * from Staff where position="Manager" or position="supervisor"
 
 select * from PrivateOwner where address like "%Glasgow%"
 
+select * from Viewing where comment = "";
 
