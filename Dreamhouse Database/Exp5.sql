@@ -29,3 +29,9 @@ select * from Staff where salary>10000;
 select street , city, postcode from Branch where city="London" or city="Glasgow";
 
 
+select * from Staff where salary between 20000 and 30000;
+
+
+
+
+
