@@ -42,4 +42,9 @@ select * from Viewing where comment = "";
 
 select * from Staff order by salary DESC ;
 
+select * from PropertyForRent order by type ASC;
+
+
+
+
 
