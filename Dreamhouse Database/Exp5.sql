@@ -22,3 +22,10 @@ select staffNo, fName, lName from Staff;
 
 select * from PropertyForRent where propertyNo=(select propertyNo from Viewing;
 )
+
+select staffNo,fName, lName, salary from Staff;
+
+select * from Staff where salary>10000;
+select street , city, postcode from Branch where city="London" or city="Glasgow";
+
+
