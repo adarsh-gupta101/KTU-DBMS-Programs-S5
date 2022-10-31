@@ -1,0 +1,26 @@
+Experiment 5
+DML Commands I
+Aim:
+Practice SQL commands for DML (insertion, updating, deletion of data, and viewing/querying records based on condition in databases).
+Part 1 – Update/Delete
+    1. Give all staff a 3% pay increase.
+    2. Give all Managers a 5% pay increase.
+    3. Update the price of all rooms by 5%.
+    4. Promote David Ford to Manager and change his salary to £18,000.
+    5. Delete all viewings that relate to property PG4.
+    6. Delete all rows from the Viewing table.
+Part 2 - Select
+    1. List full details of all staff.
+    2. Produce a list of salaries for all staff, showing only the staff number, the first and last names, and the salary details.
+    3. List the property numbers of all properties that have been viewed.
+    4. Produce a list of monthly salaries for all staff, showing the staff number, the first and last names, and the salary details.
+    5. List all staff with a salary greater than £10,000.
+    6. List the addresses of all branch offices in London or Glasgow.
+    7. List all staff with a salary between £20,000 and £30,000.
+    8. List all managers and supervisors.
+    9. Find all owners with the string ‘Glasgow’ in their address
+    10. List the details of all viewings on property PG4 where a comment has not been supplied.
+    11. Produce a list of salaries for all staff, arranged in descending order 
+of salary.
+    12. Produce an abbreviated list of properties arranged in order of  
+property type.
