@@ -40,3 +40,6 @@ select * from PrivateOwner where address like "%Glasgow%"
 
 select * from Viewing where comment = "";
 
+select * from Staff order by salary DESC ;
+
+
