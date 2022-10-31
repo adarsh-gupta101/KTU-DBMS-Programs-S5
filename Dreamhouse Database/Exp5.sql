@@ -36,3 +36,6 @@ select * from Staff where salary between 20000 and 30000;
 
 select * from Staff where position="Manager" or position="supervisor"
 
+select * from PrivateOwner where address like "%Glasgow%"
+
+
