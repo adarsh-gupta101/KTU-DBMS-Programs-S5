@@ -28,3 +28,55 @@ OUTPUT -> WAS USING ONLINE COMPILER SO COULDNT RUN THIS COMMAND)
     5. Revoke all privileges given to the new user and validate the same.
 REVOKE ALL ON DreamHome.Branch59 FROM 'adarsh'@'localhost';
 REVOKE SELECT ON DreamHome.PropertyForRent59 FROM 'adarsh'@'localhost';
+
+
+    1. Create a table named ‘TEMP’ with attributes A1(int), A2(varchar), and A3(int).
+CREATE TABLE TEMP (A1 int, A2 VARCHAR(10), A3 int);
+
+
+    2. Insert 10 rows into TEMP. While inserting, keep three savepoints (A, B and C) after 2nd, 5th, and 8th row insertion respectively.
+              INSERT INTO TEMP VALUES(1, "a", 11);
+       INSERT INTO TEMP VALUES(2, "b", 12);
+       SAVEPOINT A;
+       INSERT INTO TEMP VALUES(1, "a", 11);
+       
+       INSERT INTO TEMP VALUES(2, "b", 12);
+       
+       INSERT INTO TEMP VALUES(3, "c", 13);
+       INSERT INTO TEMP VALUES(4, "d", 14);
+       
+       INSERT INTO TEMP VALUES(5, "e", 15); 
+       
+       SAVEPOINT B;
+       INSERT INTO TEMP VALUES(6, "d", 14);
+       
+       INSERT INTO TEMP VALUES(7, "e", 15); 
+       INSERT INTO TEMP VALUES(8, "f", 16);
+       
+       
+       
+       SAVEPOINT C;
+       INSERT INTO TEMP VALUES(9, "f", 16);
+       
+       INSERT INTO TEMP VALUES(10, "f", 17);
+       
+       
+
+
+    3. Rollback to C, B and then A printing the table contents all the time.
+ROLLBACK TO C
+ROLLBACK TO B
+ROLLBACK TO A
+
+    4. Commit the current state of TEMP. (Validate the commit operation)
+       COMMIT 
+ROLLBACK TO C
+ROLLBACK TO B
+ROLLBACK TO A
+
+
+
+
+
+
+
